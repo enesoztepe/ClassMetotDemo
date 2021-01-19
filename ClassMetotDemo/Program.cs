@@ -23,7 +23,17 @@ namespace ClassMetotDemo
 
             Customer[] customers = new Customer[] { custom1, custom2, custom3 };
 
-            
+            CustomerManager.Add(customers[0]);
+            CustomerManager.Add(customers[1]);
+            CustomerManager.Add(customers[2]);
+
+            CustomerManager.Delete(customers[0]); // CustomerManager da gerçek bir ekleme veya silme işlemi yapmıyoruz sadece görüntülüyoruz.
+            CustomerManager.Delete(customers[1]);
+            CustomerManager.Delete(customers[2]);
+
+            CustomerManager.List(customers);
+
+            Console.ReadKey();
 
         }
     }
